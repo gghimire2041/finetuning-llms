@@ -40,4 +40,37 @@ After pre-training, BERT can be fine-tuned on specific NLP tasks with task-speci
 The mathematical underpinnings of BERT involve complex matrix operations, attention mechanisms, and neural network layers implemented in its Transformer architecture. These operations enable BERT to effectively capture contextual information and generate powerful representations of text, making it highly effective for various NLP tasks.
 
 
+# GPT Transformers
+
+GPT (Generative Pre-trained Transformer) models are a class of AI language models developed by OpenAI. These models are based on the Transformer architecture and have demonstrated exceptional capabilities in various natural language processing (NLP) tasks.
+
+## Features
+
+- **Self-Attention Mechanism**: GPT models use a self-attention mechanism that allows them to capture dependencies between different words in a sequence more effectively.
+  
+- **Pre-training and Fine-tuning**: GPT models are pre-trained on vast amounts of text data, enabling them to learn the nuances of language. They can be further fine-tuned on specific tasks with additional data for better performance.
+  
+- **Text Generation and Understanding**: GPT models excel in tasks such as text generation, language understanding, translation, summarization, question-answering, and more.
+
+## Versions
+
+OpenAI has released several versions of the GPT model, including:
+- GPT-1
+- GPT-2
+- GPT-3
+
+Each version differs in model size, training data, and performance, with GPT-3 being one of the largest and most powerful language models available.
+
+## Usage
+
+To use GPT Transformers in your projects, you can leverage libraries like `transformers` in Python. This library provides an easy-to-use interface for working with GPT models, including loading pre-trained models, fine-tuning, and inference.
+
+```python
+from transformers import GPT2Tokenizer, GPT2Model
+
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+model = GPT2Model.from_pretrained('gpt2')
+
+
+
 
